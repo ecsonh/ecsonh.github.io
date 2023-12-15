@@ -38,7 +38,17 @@
       </div>
     </div>
   </nav>
-
+  <style>
+    .contact-container {
+            display: flex; /* Use flexbox for layout */
+            justify-content: space-between; /* Space items evenly */
+            padding: 10px; /* Add padding for spacing */
+        }
+    .header_size {
+      font-size: 16px;
+      
+    }
+  </style>
   <section class="hero is-primary">
     <div class="hero-body">
       <div class="container">
@@ -55,13 +65,28 @@
               Ecson Hsu
             </h1>
             <h2 class="subtitle">
-              FullStack Machine Learning, Irvine, CA
+              FullStack & Machine Learning Software Engineer
             </h2>
-            <p>
-              <a href="https://docs.google.com/document/d/1yyiCp0USarQBghPxZRznV9JMZgCOjliV00AseAbMM4g/edit" class="icon has-text-light">
-                <i class="fas fa-file-word"></i> <strong>Resume</strong>
-              </a>
-            </p>
+            <nav class="header level">
+              <div class = "contact-container">
+                <a href="https://docs.google.com/document/d/1yyiCp0USarQBghPxZRznV9JMZgCOjliV00AseAbMM4g/edit" class="icon has-text-light">
+                  <i class="fas fa-file-word"></i> <strong>Resume</strong>
+                </a>
+              </div>
+              <div class="contact-container">
+                <p class="header_size">
+                  <a href="mailto:ecsonh@uci.edu", ><strong>ecsonh@uci.edu</strong></a>
+                </p>
+              </div>
+              <div class = "contact-container">
+                <strong>Cell: (562)268-2586</strong>
+                
+              </div>
+              <div class = "contact-container">
+                <strong> Irvine, CA</strong>
+              </div>
+              
+            </nav>
           </div>
         </div>
       </div>
@@ -229,7 +254,7 @@
             <div class="tile is-parent">
               <article class="tile is-child notification">
                 <p class="title">Health Device Program</p>
-                <figure class="image is-3by2">
+                <figure class="image is-4by3">
                   <img class="modal-trigger" data-target="project-1-modal" src="img/health.png">
                 </figure>
               </article>
@@ -247,6 +272,14 @@
                 <p class="title">Web Crawler Program</p>
                 <figure class="image is-4by3">
                   <img class="modal-trigger" data-target="project-3-modal" src="img/web crawl.png">
+                </figure>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child notification">
+                <p class="title">RL S&P500 Trade Bot</p>
+                <figure class="image is-4by3">
+                  <img class="modal-trigger" data-target="project-4-modal" src="img/crypto-trading-bot-paybito.jpg">
                 </figure>
               </article>
             </div>
@@ -375,7 +408,6 @@
           <figure class="image is-4by3 carousel-cell">
             <img src="img/carousel/model.png">
           </figure>
-
         </div>
 
         <div class="content">
@@ -385,6 +417,39 @@
           <div class="tags">
             <span class="tag">Python</span>
             <span class="tag">HTML</span>
+          </div>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+      </footer>
+    </div>
+  </div>
+
+  <div id="project-4-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Autonomous RL Trading Bot</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div id="project-3-modal-carousel" class="carousel">
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/trading_bot.png">
+          </figure>
+
+        </div>
+
+        <div class="content">
+          <p>Built a Reinforcement Learning Trading Bot that does autonomous trading on S&P 500 with PPO model.</p>
+          <p class="heading"><a href="https://github.com/AmyLHuang/Stock-Trading-Bot">project link</a></p>
+
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Pytorch</span>
+            <span class="tag">Deep Learning</span>
           </div>
         </div>
 
